@@ -4,8 +4,6 @@
     line-height: 26px;
     font-size: 16px;
     border-radius: 7px;
-    border-top-left-radius: 60px;
-    border-bottom-left-radius: 3px;
     border-width: 10px;
     margin: 10px;
     width : calc(100% - 60px);
@@ -17,8 +15,6 @@
     line-height: 26px;
     font-size: 16px;
     border-radius: 7px;
-    border-top-right-radius: 60px;
-    border-bottom-right-radius: 3px;
     border-width: 10px;
     background-color: #93ebc2;
     margin: 10px;
@@ -38,6 +34,9 @@
     background-color: #fdbf68;
     margin: 10px;
     order: 0;
+    background-image:url('bot.jpg');
+    background-size: contain;
+    background-size: cover;
 }
   
 .avatar-right-appeared {
@@ -46,10 +45,13 @@
     border-radius: 50%;
     background-color: #6dc779;
     margin: 10px;
+    background-image:url('unknown.jpg');
+    background-size: contain;
+    background-size: cover;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }

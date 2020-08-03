@@ -1,0 +1,33 @@
+[
+    {
+        "message" : "Hello!"
+    },
+
+    {
+        "message" : "How are we doing today?"
+    },
+
+    {
+        "message" : "Looks good to me"
+    },
+
+    {
+        "message" : "I'm also fine, thanks for asking"
+    },
+
+    {
+        "message" : "Hmm, I don't know that one"
+    },
+
+    {
+        "message" : "Well the weather is awesome today"
+    },
+
+    {
+        "message" : "Take care!"
+    },
+
+    {
+        "message" : "Goodbye"
+    }
+]

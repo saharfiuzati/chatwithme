@@ -1,6 +1,7 @@
 import './ChatApp.css';
 import React from 'react';
 import MessagesContainer from './MessagesContainer';
+import BotMessages from './BotMessages.json';
 
 class ChatApp extends React.Component {
 
@@ -36,9 +37,11 @@ class ChatApp extends React.Component {
         
         let messages = this.state.messages;
         let current_message = this.state.current_message;
+        let botmessages = BotMessages[Math.floor(Math.random() * BotMessages.length)];
+        
         if(current_message){
             this.setState({
-                    messages: [...messages, {"message":current_message , "botMessage" : "Hello From Bot Message"}],
+                    messages: [...messages, {"message":current_message , "botMessage" : botmessages.message}],
                     current_message : ''
                 });
         }  
