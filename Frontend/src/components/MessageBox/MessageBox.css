@@ -1,0 +1,15 @@
+.text_wrapper {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 6px;
+    width: calc(100% - 85px);
+    min-width: 100px;
+    top: 18px;
+    border: solid transparent;
+    content: " ";
+    pointer-events: none;
+}
+
+.appeared {
+    opacity: 1;
+}

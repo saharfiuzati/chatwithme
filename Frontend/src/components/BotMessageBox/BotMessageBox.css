@@ -1,0 +1,23 @@
+.message-left-appeared {
+    background-color: #e9dfd0;
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    border-width: 10px;
+    margin: 10px;
+    width : calc(100% - 60px);
+    order: 1;
+}
+
+.avatar-left-appeared {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fdbf68;
+    margin: 10px;
+    order: 0;
+    background-image:url('bot.jpg');
+    background-size: contain;
+    background-size: cover;
+}
