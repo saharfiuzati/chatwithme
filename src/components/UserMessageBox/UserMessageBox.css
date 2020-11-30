@@ -1,0 +1,27 @@
+.message-right-appeared {
+    padding: 18px 20px;
+    line-height: 26px;
+    font-size: 16px;
+    border-radius: 7px;
+    border-width: 10px;
+    background-color: #93ebc2;
+    margin: 10px;
+    width : calc(100% - 60px);
+}
+  
+.avatar-right-appeared {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6dc779;
+    margin: 10px;
+    background-image:url('unknown.jpg');
+    background-size: contain;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

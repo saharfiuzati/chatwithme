@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Backend",
+    "\\Backend\\ChatWithMeApi",
+    "\\Backend\\ChatWithMeApi\\Domain",
+    "\\Backend\\ChatWithMeApi\\SourceGenerator"
+  ],
+  "SelectedNode": "\\Backend\\ChatWithMeApi\\ChatWithMeApi.sln",
+  "PreviewInSolutionExplorer": false
+}
