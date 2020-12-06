@@ -2,26 +2,21 @@ import "./ChatApp.css";
 import React from "react";
 import MessagesContainer from "../MessagesContainer/MessagesContainer";
 import MessageInput from "../MessageInput/MessageInput";
+import {useState } from "react";
 
-class ChatApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      messages : []
-    }
-  }
-  callbackFunction = (messageInputData) => {
-    this.setState({messages: messageInputData})
+function ChatApp(props) {
+
+  const [messages, setMessages] = useState([]);
+  
+  const callbackFunction = (messageInputData) => {
+    setMessages(messages.concat(messageInputData));
   }
   
-  render() {
-    return (
-      <div className="messages">
-        <MessagesContainer messages={this.state.messages}></MessagesContainer>
-        <MessageInput chatAppCallback = {this.callbackFunction}></MessageInput>       
-      </div>
-    );
-  }
+  return (
+    <div className="messages">
+      <MessagesContainer messages={messages}></MessagesContainer>
+      <MessageInput chatAppCallback = {callbackFunction}></MessageInput>       
+    </div>
+  );
 }
-
 export default ChatApp;
