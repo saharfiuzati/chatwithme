@@ -1,10 +1,16 @@
 import React from "react";
 import "../BotMessageBox/BotMessageBox.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function BotMessageBox(props) {
-    
-  const [botMessage] = useState(props.botMessage);
+  const [botMessage, setBotMessage] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setBotMessage(props.botMessage);
+    }, 1000);
+    return () => timer;
+  }, [botMessage]);
 
   const sendMessageBot = (e) => {
     if (botMessage.length > 0) {
