@@ -6,3 +6,4 @@ C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\SourceGenerator\obj
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.csproj.CoreCompileInputs.cache
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.dll
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.pdb
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\SourceGenerator\obj\Debug\netstandard2.0\SourceGenerator.csprojAssemblyReference.cache

@@ -1,15 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./MessageInput.css";
-import BotMessages from "./BotMessages.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function MessageInput(props) {
-  const [messages, setMessages] = useState([]);
   const [currentMessage, setCurrentMessage] = useState("");
+  const [botMessages, setBotMessages] = useState([]);
 
-  const handleClick =(e) => {
+  useEffect(() => {
+    (async () => {
+      const result = await axios.get("https://localhost:44359/botmessages");
+      setBotMessages(result.data);
+    })();
+  }, []);
+
+  const handleClick = (e) => {
     addMessageBox();
-  }
+  };
   const OnChange = (e) => {
     setCurrentMessage(e);
   };
@@ -22,18 +29,14 @@ function MessageInput(props) {
 
   const addMessageBox = (e) => {
     let botmessage =
-      BotMessages[Math.floor(Math.random() * BotMessages.length)];
-    console.log(botmessage);
+      botMessages[Math.floor(Math.random() * botMessages.length)];
     if (currentMessage) {
-      
       setCurrentMessage("");
       props.chatAppCallback({
         message: currentMessage,
-        botMessage: botmessage.message,
+        botMessage: botmessage,
       });
     }
-
-    console.log(messages);
   };
 
   return (
@@ -45,7 +48,9 @@ function MessageInput(props) {
         onChange={(e) => OnChange(e.target.value)}
         placeholder="Type your messages here..."
       />
-      <button className="send_message" onClick = {handleClick}>Send</button>
+      <button className="send_message" onClick={handleClick}>
+        Send
+      </button>
     </div>
   );
 }
