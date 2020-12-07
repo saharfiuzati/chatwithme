@@ -4,26 +4,21 @@ import BotMessageBox from "../BotMessageBox/BotMessageBox";
 import "../MessagesContainer/MessagesContainer.css";
 
 function MessagesContainer(props) {
-
-  const createBotMessages = (e) => {
-    if (props && props.messages.length > 0) {  
-      return props.messages.map((message, index) => (
-        <BotMessageBox key={index} botMessage={message["botMessage"]} />
-      ));
-    }
-  };
-  const createUserMessages = (e) => {
+  
+  const createMessages = (e) => {
     if (props && props.messages.length > 0) {
       return props.messages.map((message, index) => (
-        <UserMessageBox key={index} message={message["message"]} />
+        <div>
+          <UserMessageBox key={index} message={message["message"]} />
+          <BotMessageBox key={index} botMessage={message["botMessage"]} />
+        </div>
       ));
     }
   };
 
   return (
     <div className="messages">
-      <div>{createUserMessages()}</div>
-      <div>{createBotMessages()}</div>
+      {createMessages()}
     </div>
   );
 }
