@@ -1,25 +1,44 @@
 import React from "react";
-import UserMessageBox from "../UserMessageBox/UserMessageBox";
-import BotMessageBox from "../BotMessageBox/BotMessageBox";
 import "../MessagesContainer/MessagesContainer.css";
+import { useState, useEffect } from "react";
+import * as Firebase from "../App/Firebase/Firebase";
+import MessageShower from "../App/MessageShower/MessageShower";
 
 function MessagesContainer(props) {
   
-  const createMessages = (e) => {
-    if (props && props.messages.length > 0) {
-      return props.messages.map((message, index) => (
-        <div>
-          <UserMessageBox key={index} message={message["message"]} />
-          <BotMessageBox key={index} botMessage={message["botMessage"]} />
-        </div>
-      ));
-    }
-  };
+const [Messages, setMessages] = useState([]);
+  
+  useEffect(async () => {
+    const unsubscribe = Firebase.streamMessages( {
+        next: querySnapshot => {
+            const updatedMessages = 
+                querySnapshot.docs.map(docSnapshot => docSnapshot.data());
+                setMessages(updatedMessages);
+        },
+    });
+    
+    return unsubscribe;
+}, [setMessages]);
 
-  return (
-    <div className="messages">
-      {createMessages()}
-    </div>
-  );
+  const leveledUpMessages = Messages.map((a, i) => <MessageShower key={i} message = {a}></MessageShower>);
+   
+debugger
+  if(Messages !== undefined && Messages.length > 0) {
+    return (
+      <div>
+        {leveledUpMessages}
+      </div>
+      
+    );
+  }
+
+  else{
+    return (
+      <div>
+      </div>
+    )
+  }
+
 }
+
 export default MessagesContainer;

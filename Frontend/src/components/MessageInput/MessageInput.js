@@ -1,42 +1,35 @@
 import React from "react";
 import "./MessageInput.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 function MessageInput(props) {
   const [currentMessage, setCurrentMessage] = useState("");
-  const [botMessages, setBotMessages] = useState([]);
-
-  useEffect(() => {
-    (async () => {
-      const result = await axios.get("https://localhost:44359/botmessages");
-      setBotMessages(result.data);
-    })();
-  }, []);
-
-  const handleClick = (e) => {
+   
+  const handleClick = async (e) => {
     addMessageBox();
   };
   const OnChange = (e) => {
     setCurrentMessage(e);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = async (e) => {
     if (e.key === "Enter") {
       addMessageBox();
     }
   };
 
-  const addMessageBox = (e) => {
-    let botmessage =
-      botMessages[Math.floor(Math.random() * botMessages.length)];
+  const addMessageBox = async (e) => {
+    
     if (currentMessage) {
       setCurrentMessage("");
       props.chatAppCallback({
-        message: currentMessage,
-        botMessage: botmessage,
+      message: currentMessage,
       });
     }
+    
+    await axios.post("https://localhost:44359/message" , { FromId: '2e5e4537-d9c8-4283-8957-34d8fcdd7cdc' , ToId: '6b5e4537-d9c8-4283-8957-34d8fcdd8cdc' , Content: currentMessage , CreatedDateTime : new Date()});
+     
   };
 
   return (

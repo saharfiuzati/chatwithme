@@ -10,11 +10,12 @@ function ChatApp(props) {
   
   const callbackFunction = (messageInputData) => {
     setMessages(messages.concat(messageInputData));
+    
   }
   
   return (
     <div className="messages">
-      <MessagesContainer messages={messages}></MessagesContainer>
+      <MessagesContainer ></MessagesContainer>
       <MessageInput chatAppCallback = {callbackFunction}></MessageInput>       
     </div>
   );
