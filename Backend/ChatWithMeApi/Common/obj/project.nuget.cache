@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/6nPDlSwr+9Xanwwu1Pj2Z+WYDLvT57pgClfznCf3dasn9Hy1T00AKCwPszwSMQ8Qf0HCAtnXadmRXrWr4OB+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\S8510\\source\\repos\\chatwithme\\Backend\\ChatWithMeApi\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\S8510\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\S8510\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\S8510\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

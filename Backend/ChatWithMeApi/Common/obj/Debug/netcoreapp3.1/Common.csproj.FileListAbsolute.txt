@@ -1,0 +1,9 @@
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Common\obj\Debug\netcoreapp3.1\Common.pdb

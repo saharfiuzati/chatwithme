@@ -8,3 +8,8 @@ C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\bin\Debug\ne
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\bin\Debug\netcoreapp3.1\Persistence.dll
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\bin\Debug\netcoreapp3.1\Persistence.pdb
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CopyComplete
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\S8510\source\repos\chatwithme\Backend\ChatWithMeApi\Domain\bin\Debug\netcoreapp3.1\Common.pdb
